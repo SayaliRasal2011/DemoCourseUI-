@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us - OET Preparation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    h2,
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    /* Navbar Styles */
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #004a70;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffdd57;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 80px 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      color: #005f8c;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contact-details {
+      font-size: 1.1rem;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-details h3 {
+      font-size: 1.6rem;
+      color: #ff5733;
+      margin-bottom: 20px;
+    }
+
+    .contact-details p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .contact-details i {
+      margin-right: 15px;
+      color: #0077b6;
+      font-size: 1.3rem;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+      font-size: 1.8rem;
+      color: #ff5733;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      display: block;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      background-color: #f9f9f9;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #0077b6;
+      background-color: white;
+    }
+
+    .contact-form button {
+      background: #ff5733;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+      text-transform: uppercase;
+    }
+
+    .contact-form button:hover {
+      background: #c70039;
+    }
+
+    /* Responsive Design for Contact Section */
+    @media (min-width: 768px) {
+      .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .contact-details,
+      .contact-form {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+      }
+    }
+
+ 
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    Contact US
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Us Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need further information, feel free to contact us by filling out the form below or
+        using the contact details provided.</p>
+
+      <div class="contact-info">
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+          <h3>Our Contact Details</h3>
+          <p><i class="fas fa-phone-alt"></i> Phone: +1 234 567 890</p>
+          <p><i class="fas fa-envelope"></i> Email: infocourse@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Address: 123 Hadapsar, Pune, India</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+          <h3>Get in Touch</h3>
+          <form action="submit-form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+
+</html>

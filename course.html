@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #004a70;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffdd57;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 30px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .course-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .course-title {
+      color: #0077b6;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .course-description {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .course-duration {
+      background-color: #ff6347;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .course-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .course-btn:hover {
+      background-color: #005f8a;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    Our Courses
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Available Courses</h2>
+    <div class="course-container">
+
+      <!-- Course 1 -->
+      <div class="course-card">
+        <h3 class="course-title">Web Development</h3>
+        <p class="course-description">
+          Learn how to build stunning and responsive websites using HTML, CSS, JavaScript, and more. Perfect for
+          beginners and experienced developers.
+        </p>
+        <span class="course-duration">Duration: 3 Months</span>
+        <br>
+        <a href="#" class="course-btn">Learn More</a>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card">
+        <h3 class="course-title">Data Science</h3>
+        <p class="course-description">
+          Dive into the world of data analysis, visualization, and machine learning with our comprehensive Data Science
+          course.
+        </p>
+        <span class="course-duration">Duration: 6 Months</span>
+        <br>
+        <a href="#" class="course-btn">Learn More</a>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card">
+        <h3 class="course-title">Digital Marketing</h3>
+        <p class="course-description">
+          Master the art of online marketing, SEO, social media, and content marketing with this expert-led course.
+        </p>
+        <span class="course-duration">Duration: 4 Months</span>
+        <br>
+        <a href="#" class="course-btn">Learn More</a>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course-card">
+        <h3 class="course-title">Graphic Design</h3>
+        <p class="course-description">
+          Get creative and learn how to design visually appealing graphics using Adobe Photoshop, Illustrator, and other
+          design tools.
+        </p>
+        <span class="course-duration">Duration: 2 Months</span>
+        <br>
+        <a href="#" class="course-btn">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
